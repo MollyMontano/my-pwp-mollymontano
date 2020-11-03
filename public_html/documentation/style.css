@@ -1,3 +1,5 @@
+img PecanRiv
+
 .promo-wrapper {
     position: absolute;
     width: 100%;
@@ -6,8 +8,23 @@
 .promo {
     float: right;
 }
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
 
-.pork-pintxos img {
-    width: 300px;
-    border: solid white 2rem;
+div.gallery:hover {
+    border: 2px solid white;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
 }
