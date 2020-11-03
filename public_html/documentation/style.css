@@ -1,0 +1,13 @@
+.promo-wrapper {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+}
+.promo {
+    float: right;
+}
+
+.pork-pintxos img {
+    width: 300px;
+    border: solid white 2rem;
+}
