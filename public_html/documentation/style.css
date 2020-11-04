@@ -1,6 +1,6 @@
 .promo img {
     float: left;
-    opacity: 0.7;
+    opacity: 0.6;
 }
 
 
@@ -18,21 +18,27 @@
     padding: 10px;
     text-align: center;
 }
-.about us {
+
+.about {
+    margin-top: 10px;
+}
+
+.food {
     background-color: grey;
     margin-top: 10px;
+
 }
 
 .gallery {
     margin: 1px;
     border: 1px solid #ccc;
-    float: left;
+    align-content: center;
 }
 
 
 .gallery img {
-    width: 100%;
-    height: auto;
+    width: 250px;
+    height: 250px;
     border: 2px solid white;
 }
 
