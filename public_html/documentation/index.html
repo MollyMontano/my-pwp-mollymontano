@@ -9,56 +9,60 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Wireframe</title>
 </head>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-secondary">
-        <button class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+<nav class="navbar navbar-expand-lg navbar-dark bg-secondary sticky-top">
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
 
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="home"><span class="sr-only">(current)</span>Home</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#about">About Us</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#food">Our Food</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#gallery">Gallery</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link active"><a href="#contact-me">Contact Us</a>
-                </li>
-            </ul>
-        </div>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="home"><span class="sr-only">(current)</span>Home</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#food">Our Food</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link active" href="#contact-me">Contact Us</a>
+            </li>
+        </ul>
+    </div>
 </nav>
 
 <section class="mission">
-    <div class="continer">
-    <img src="img/PecanRiverPro.jpg" alt="Pecan River Provisions Tree logo">
-    <div>
-        <h1>This is where the mission statement will go</h1>
-        <p>A longer description of the business will go here. It will be 3 sentences
-            max. It should not be longer.</p>
-    </div>
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-md-4 py-4">
+                <img src="img/PecanRiverPro.jpg" alt="Pecan River Provisions Tree logo">
+            </div>
+            <div class="col-md-8">
+                <h2>Locally crafted culinary quality fare served with integrity </h2>
+                <p>A chef driven, fast casual dining experience with an artisanal focus.</p>
+            </div>
+        </div>
     </div>
 </section>
 <section class="banner">
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
-                <img class="img-fluid" src="img/beefongrill.JPG" alt="Beef Skewers on Grill photo by Liz Lopez">
+                <img class="img-fluid" src="img/tartar.JPG" alt="Beef Tartare on set table photo by Liz Lopez">
             </div>
         </div>
     </div>
@@ -68,14 +72,13 @@
         <div class="row">
             <div class="col-md-4 py-4">
                 <H2>About Us</H2>
-                <img class="img-fluid d-block mx-auto" src="img/JaviMollyFoodTruck%20.jpg" alt="Javier and Molly Montano">
+                <img class="img-fluid d-block mx-auto" src="img/JaviMollyFoodTruck%20.jpg"
+                     alt="Javier and Molly Montano">
             </div>
             <div class="col-md-8 py-4">
                 <p>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                    Chef Javier Montano, a native Burqueno, has been cooking for over 30 years
+                    in California and New Mexico.
                 </p>
                 <p>
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -114,9 +117,9 @@
         </div>
     </div>
 </section>
-<section class="gallery">
-    <div class="container">
-        <div class="col-md-12">
+<section class="c-one-col--text content container revealable revealed">
+    <div class="gallery">
+        <div class="row">
             <H3>Gallery</H3>
         </div>
         <div class="row d-flex">
@@ -135,9 +138,9 @@
             <div class="col-md-3">
                 <img src="img/frisco-fries.JPG" alt="Garlic French Fries" style=>
             </div>
-                <div class="col-md-3">
-                    <img src="img/keylime-pie.jpg" alt="Key Lime Pie">
-                </div>
+            <div class="col-md-3">
+                <img src="img/keylime-pie.jpg" alt="Key Lime Pie">
+            </div>
             <div class="col-md-3">
                 <img src="img/tabletop.JPG" alt="3 Dishes on a table">
             </div>
@@ -172,7 +175,8 @@
 
                     <div>
                         <label for="message"></label>
-                        <textarea name="message" id="message" cols="30" rows="10" maxlength="1000 characters max"></textarea>
+                        <textarea name="message" id="message" cols="30" rows="10"
+                                  maxlength="1000 characters max"></textarea>
                     </div>
 
                     <button type="button" class="btn btn-success btn-sm">Send</button>
@@ -183,9 +187,11 @@
 </section>
 
 
-
 <footer class="py-4 bg-dark text-light text-center mt-4">
     <small>Find us on Social Media</small>
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+
 </footer>
 
 
