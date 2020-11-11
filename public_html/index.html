@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Wireframe</title>
 </head>
@@ -140,7 +140,7 @@
 
             <figure class="col-md-3">
 
-                    <img alt="picture" src="img/tomato-salad-cropped.jpg".jpg"
+                    <img alt="picture" src="img/tomato-salad-cropped.jpg"
                          class="img-fluid" />
 
             </figure>
@@ -200,11 +200,18 @@
     <div class="input-group-prepend">
         <span class="input-group-text"><i class="fa fa-comment"></i> </span>
     </div>
-    <textarea class="form-control" id="message" maxlength="2000" name="message" placeholder="Your Message (2000 characters max")" required
-    rows="5"> </textarea>
+    <textarea class="form-control" id="message" maxlength="2000" name="message"
+              placeholder="Your Message (2000 characters max)" required
+              rows="5"></textarea>
 </div>
 </div>
+
+<button class="btn btn-info" type="submit">Submit</button>
+<button class="btn btn-default" type="reset">Reset</button>
+
 </form>
+<div id="output-area"></div>
+
 
 
 

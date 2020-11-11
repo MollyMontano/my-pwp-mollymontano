@@ -1,11 +1,9 @@
 $(document).ready(function () {
-    $("contact").validate()
+    $("#contact").validate({
     debug: true,
-        errorClass: "alert alert-danger"
-    ',
-
-    errorLabelContainer: 'output-area',
-        errorElement: "div"
+        errorClass: "alert alert-danger",
+        errorLabelContainer: '#output-area',
+        errorElement: "div",
 
 
     rules: {
@@ -25,7 +23,7 @@ $(document).ready(function () {
         name:{
             required: "Name is a required field",
         },
-        email: {
+        email:{
             required: "is a required field",
                 email: "please provide a valid email"
         },
@@ -42,7 +40,7 @@ $(document).ready(function () {
              $("#output-area").css("display","")
             $("#output-area").html(ajaxOutput)
 
-            if($(".alert-success").length => 1) {
+            if($(".alert-success").length >= 1) {
                 $("#contact")[0].reset()
             }
             }
