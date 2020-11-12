@@ -45,6 +45,7 @@ html {
 
 .gallery img {
     max-width: 250px;
-    border: 2px solid grey;
+    max-height: 250px;
+    border: 2px solid white;
 }
 
