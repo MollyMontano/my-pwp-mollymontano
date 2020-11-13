@@ -10,7 +10,7 @@ html {
     margin: 10px;
     padding: 10px;
     display: block;
-    text: center;
+    text: m-t 5em center;
 }
 
 .mission img {
