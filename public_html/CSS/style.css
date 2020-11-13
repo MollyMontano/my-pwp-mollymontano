@@ -35,23 +35,27 @@ html {
 
 
 .gallery {
-    display: block;
-    column-gap: 1px;
+    display: flex;
+    flex-wrap: row;
+    justify-content: space-evenly;
     padding: 0;
-    margin: 1px;
+    margin: 0;
     align-content: center;
 }
 
 
 .gallery img {
-    max-width: 250px;
-    max-height: 250px;
+    max-width: 210px;
+    max-height: 210px;
     border: 2px solid white;
+    padding: 0;
 }
 
 
 .contact {
     padding: 3em;
+    align-content: center;
+    background-color: gray;
 }
 
 label {
