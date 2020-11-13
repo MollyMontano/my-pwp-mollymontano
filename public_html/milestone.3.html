@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+          integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
     <title>Wireframe</title>
 </head>
 <nav class="navbar navbar-expand-lg navbar-dark bg-secondary sticky-top">
@@ -78,7 +80,7 @@
             <div class="col-md-8 py-4">
                 <p>
                     Pecan River Provisions is a new concept from husband and wife team Javier and Molly
-                    Montano.  They create fun everyday meals.  Centered around the rotisserie where
+                    Montano. They create fun everyday meals. Centered around the rotisserie where
                     the Pecan Coffee Chile rubbed chicken will be the star.
                 </p>
                 <p>
@@ -93,134 +95,111 @@
         </div>
     </div>
 </section>
-<section class="container">
-<section class id="gallery">
-<h2 style="text-align:center">Gallery</h2>
 
-<div class="row">
-    <div class="col-md-12">
 
-        <div id="mdb-lightbox"></div>
+        <div class="row" id="gallery" data-toggle="modal" data-target=""
+            <div class="column">
 
-    <div class="col-md-3">
-        <a href="img/beef-skewers.JPG" data-size="1600x1067">
-        <img src="img/beef-skewers.JPG" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-        </a>
-    </div>
-    <div class="col-md-3">
-        <a href="img/lemongrass-chix-bowl.jpg" data-size="1600x1067">
-        <img src="img/lemongrass-chix-bowl.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-        </a>
-    </div>
-    <div class="col-md-3">
-        <a href="img/pork-belly-cherries%20(2).JPG" data-size="1600x1067">
-        <img src="img/pork-belly-cherries%20(2).JPG" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-        </a>
-    </div>
-    <div class="col-md-3">
-        <a href="img/frisco-fries.JPG" data-size="1600x1067">
-        <img src="img/frisco-fries.JPG" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-        </a>
-    </div>
-    <div class="col-md-3">
-        <a href="img/Chef-chopping-onion.jpg" data-size="1600x1067">
-        <img src="img/Chef-chopping-onion.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
-        </a>
-    </div>
-    <div class="col-md-3">
-        <a href="img/cheddar-chile-biscuits.JPG" data-size="1600x1067">
-        <img src="img/cheddar-chile-biscuits.JPG" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
-        </a>
-    </div>
-    <div class="col-md-3">
-        <a href="img/tomato-salad-cropped.jpg" data-size="1600x1067">
-        <img src="img/tomato-salad-cropped.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
-        </a>
-    </div>
-    <div class="col-md-3">
-        <img src="img/tabletop.JPG" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
-    </div>
-</div>
-    <div id="myModal" class="modal">
-        <span class="close cursor" onclick="closeModal()">&times;</span>
-        <div class="modal-content">
+                <div id="mdb-lightbox-ui"></div>
+                <h2 style="text-align:center">Gallery</h2>
+                <div class="col-md-3">
+                    <a href="img/beef-skewers.JPG" data-size="1600x1067">
+                        <img src="img/beef-skewers.JPG" style="width:100%" onclick="openModal();currentSlide(1)"
+                             class="hover-shadow cursor">
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="img/lemongrass-chix-bowl.jpg" data-size="1600x1067">
+                        <img src="img/lemongrass-chix-bowl.jpg" style="width:100%" onclick="openModal();currentSlide(2)"
+                             class="hover-shadow cursor">
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="img/pork-belly-cherries%20(2).JPG" data-size="1600x1067">
+                        <img src="img/pork-belly-cherries%20(2).JPG" style="width:100%"
+                             onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="img/frisco-fries.JPG" data-size="1600x1067">
+                        <img src="img/frisco-fries.JPG" style="width:100%" onclick="openModal();currentSlide(4)"
+                             class="hover-shadow cursor">
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="img/Chef-chopping-onion.jpg" data-size="1600x1067">
+                        <img src="img/Chef-chopping-onion.jpg" style="width:100%" onclick="openModal();currentSlide(5)"
+                             class="hover-shadow cursor">
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="img/cheddar-chile-biscuits.JPG" data-size="1600x1067">
+                        <img src="img/cheddar-chile-biscuits.JPG" style="width:100%"
+                             onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="img/tomato-salad-cropped.jpg" data-size="1600x1067">
+                        <img src="img/tomato-salad-cropped.jpg" style="width:100%" onclick="openModal();currentSlide(7)"
+                             class="hover-shadow cursor">
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <img src="img/tabletop.JPG" style="width:100%" onclick="openModal();currentSlide(8)"
+                         class="hover-shadow cursor">
+                </div>
+            </div>
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
 
-            <div class="mySlides">
-                <div class="numbertext">1 / 8</div>
-                <img src="img/beef-skewers.JPG" style="width:100%">
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 8</div>
+                        <img src="img/beef-skewers.JPG" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 8</div>
+                        <img src="img/lemongrass-chix-bowl.jpg" style="width:100%">
+                    </div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 8</div>
+                    <img src="img/pork-belly-cherries.JPG" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 8</div>
+                    <img src="img/frisco-fries.JPG" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">5 / 8</div>
+                    <img src="img/Chef-chopping-onion.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 8</div>
+                    <img src="img/cheddar-chile-biscuits.JPG" style="width:100%">
+                </div>
             </div>
 
             <div class="mySlides">
-                <div class="numbertext">2 / 8</div>
-                <img src="img/lemongrass-chix-bowl.jpg" style="width:100%">
+                <div class="numbertext">7 / 8</div>
+                <img src="img/tomato-salad-cropped.jpg" style="width:100%">
             </div>
-        </div>
 
-        <div class="mySlides">
-            <div class="numbertext">3 / 8</div>
-            <img src="img/pork-belly-cherries.JPG" style="width:100%">
-        </div>
+            <div class="mySlides">
+                <div class="numbertext">8 / 8</div>
+                <img src="img/tomato-salad-cropped.jpg" style="width:100%">
+            </div>
 
-        <div class="mySlides">
-            <div class="numbertext">4 / 8</div>
-            <img src="img/frisco-fries.JPG" style="width:100%">
-        </div>
-        <div class="mySlides">
-            <div class="numbertext">5 / 8</div>
-            <img src="img/Chef-chopping-onion.jpg" style="width:100%">
-        </div>
-
-        <div class="mySlides">
-            <div class="numbertext">6 / 8</div>
-            <img src="img/cheddar-chile-biscuits.JPG" style="width:100%">
-        </div>
-    </div>
-
-    <div class="mySlides">
-        <div class="numbertext">7 / 8</div>
-        <img src="img/tomato-salad-cropped.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-        <div class="numbertext">8 / 8</div>
-        <img src="img/tomato-salad-cropped.jpg" style="width:100%">
-    </div>
-
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-        <div class="caption-container">
-            <p id="caption"></p>
-        </div>
+            <a class="prev" onclick="plusSlides(-1)"></a>
+            <a class="next" onclick="plusSlides(1)"></a>
 
 
-        <div class="col-md-4">
-            <img class="demo cursor" src="img/beef-skewers.JPG" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
         </div>
-        <div class="col-md-4">
-            <img class="demo cursor" src="img/lemongrass-chix-bowl.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
-        </div>
-        <div class="col-md-4">
-            <img class="demo cursor" src="img/pork-belly-cherries%20(2).JPG" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-        </div>
-        <div class="col-md-4">
-            <img class="demo cursor" src="img/frisco-fries.JPG" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-        </div>
-        <div class="col-md-4">
-            <img class="demo cursor" src="img/Chef-chopping-onion.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-        </div>
-        <div class="col-md-4">
-            <img class="demo cursor" src="img/cheddar-chile-biscuits.JPG" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-        </div>
-        <div class="col-md-4">
-            <img class="demo cursor" src="img/tomato-salad-cropped.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-        </div>
-        <div class="col-md-4">
-            <img class="demo cursor" src="img/tabletop.JPG" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-        </div>
-    </div>
-</div>
-</section>
+    </section>
 </section>
 
 <!--<section class="gallery">
@@ -287,60 +266,75 @@
                 </a>
             </figure>-->
 
-        </div>
+</div>
 
-    </div>
-    </div>
+</div>
+</div>
 </div>
 </section>
 
-<form id="contact" action="./apis/" method="post" novalidate>
-<div class="form-group">
-    <label for="name">Name</label>
-<div class="input-group">
-<div class="input-group-prepend">
-    <span class="input-group-prepend"><i class fa fa-user></i></span>
+<header class="py-3">
+    <div class="container">
+        <h3>Contact Us</h3>
     </div>
-    <input class="form-control" id="name" name="name" placeholder="Your Name" type="text"></input>
-</div>
-</div>
+</header>
 
-<div class="form-group">
-    <label for="email">Email</label>
-    <input class="input-group">
+<main class="container">
+    <div class="row">
+        <div class="contact col-md-6">
+
+
+
+<form id="contact" action="./apis/" method="post" novalidate>
+    <div class="form-group">
+        <label for="name">Name</label>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text"><i class fa fa-user></i></span>
+            </div>
+            <input class="form-control" id="name" name="name" placeholder="Your Name" type="text">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email</label>
+        <div class="input-group">
         <div class="input-group-prepend">
             <span class="input-group-text"><i class="fa fa-envelope"></i> </span>
         </div>
-        <input class="form-control" id="email" placeholder="Your Email" type="text"></input>
+        <input class="form-control" id="email" placeholder="Your Email" type="email">
     </div>
     <div class="form-group">
-    <label for="subject">Subject</label>
-    <input class="input-group">
-    <div class="input-group-prepend">
-        <span class="input-group-text"><i class="fa fa-pencil"></i> </span>
+        <label for="subject">Subject</label>
+        <input class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fa fa-pencil"></i> </span>
+        </div>
+        <input class="form-control" id="subject" placeholder="Subject" type="text">
     </div>
-    <input class="form-control" id="subject" placeholder="Subject" type="text"></input>
-</div>
-</div>
-<div class="form-group">
-    <label for="message">Message</label>
-    <input class="input-group">
-    <div class="input-group-prepend">
-        <span class="input-group-text"><i class="fa fa-comment"></i> </span>
     </div>
-    <textarea class="form-control" id="message" maxlength="2000" name="message"
-              placeholder="Your Message (2000 characters max)" required
-              rows="5"></textarea>
-</div>
-</div>
+    <div class="form-group">
+        <label for="message">Message</label>
+        <input class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fa fa-comment"></i> </span>
+        </div>
+        <textarea class="form-control" id="message" maxlength="2000" name="message"
+                  placeholder="Your Message (2000 characters max)" required
+                  rows="5"></textarea>
+    </div>
+    </div>
 
-<button class="btn btn-info" type="submit">Submit</button>
-<button class="btn btn-default" type="reset">Reset</button>
+    <button class="btn btn-info" type="submit">Submit</button>
+    <button class="btn btn-default" type="reset">Reset</button>
 
 </form>
+
 <div id="output-area"></div>
 
-
+    </div>
+    </div>
+</main>
 
 
 <footer class="py-4 bg-dark text-light text-center mt-4">
@@ -355,7 +349,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
-
 
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
