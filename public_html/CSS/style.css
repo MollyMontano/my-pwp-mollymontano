@@ -49,3 +49,11 @@ html {
     border: 2px solid white;
 }
 
+
+.contact {
+    padding: 3em;
+}
+
+label {
+    display: block;
+}
