@@ -1,3 +1,16 @@
+function switchStyle() {
+    if (document.getElementById('styleSwitch').checked) {
+        document.getElementById('gallery').classList.add("custom");
+        document.getElementById('exampleModal').classList.add("custom");
+    } else {
+        document.getElementById('gallery').classList.remove("custom");
+        document.getElementById('exampleModal').classList.remove("custom");
+    }
+}
+
+
+
+/*
 function openModal() {
     document.getElementById("myModal").style.display = "block";
 }
@@ -33,4 +46,5 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
     captionText.innerHTML = dots[slideIndex-1].alt;
+*/
 }
