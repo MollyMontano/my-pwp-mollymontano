@@ -2,8 +2,9 @@ html {
     box-sizing: border-box;
 }
 
-.navbar-custom {
-    style: white;
+.navbar {
+    color: white;
+    text-overline-color: white;
 }
 
 

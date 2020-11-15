@@ -74,7 +74,7 @@ const handleGetRequest = (request, response) => {
 
 
 // Example express configuration for our /apis/ route.
-indexRoute.route("/g")
+indexRoute.route("/")
     .get(handleGetRequest)
     .post(recaptcha.middleware.verify, handleSendingEmail)
 
