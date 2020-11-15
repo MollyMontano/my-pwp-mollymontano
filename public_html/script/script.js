@@ -73,7 +73,8 @@ $(document).ready(function () {
                 maxlength: "message is too long"
             }
         },
-        submitHandler : (form) => {
+
+        submitHandler: (form) => {
             $("#contact").ajaxSubmit({
                 type: "POST",
                 url: $("#contact").attr('action'),
