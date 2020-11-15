@@ -55,6 +55,9 @@ html {
     display: table;
     clear: both;
 }
+.top-buffer {
+    margin-top:15px;
+}
 
 /* Create four equal columns that floats next to eachother */
 .column {
