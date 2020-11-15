@@ -25,13 +25,13 @@ const indexRoute = express.Router();
 
 const recaptcha = new Recaptcha(process.env.RECAPTCHA_SITE_KEY, process.env.RECAPTCHA_SECRET_KEY)
 
-
 const validation = [
     check("email", "please provide a valid email").isEmail(),
     check("name", "A valid name is required").not().isEmpty().trim().escape(),
     check("subject").optional().trim().escape(),
     check("message", "A message shorter than 2000 characters is required").not().isEmpty().trim().escape().isLength({max:2000})
 ]
+
 
 const handleSendingEmail = (request, response) => {
     response.append("Content-Type","text/html")
