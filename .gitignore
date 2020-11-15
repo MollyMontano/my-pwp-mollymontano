@@ -2,4 +2,5 @@
 DS_Store
 /vendor
 /src/.env
+/src/node_modules
 
