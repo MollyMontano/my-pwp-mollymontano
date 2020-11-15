@@ -36,7 +36,6 @@ const validation = [
 const handleSendingEmail = (request, response) => {
     response.append("Content-Type","text/html")
     const errors = validationResult(request)
-}
 
 if(errors.isEmpty()===false) {
     const currentError = errors.array()[0]
