@@ -33,26 +33,26 @@ const validation = [
     check("message", "A message shorter than 2000 characters is required").not().isEmpty().trim().escape().isLength({max:2000})
 ]
 
-if(errors.isEmpty()===false) {
-    const currentError = errors.array()[0]
-
-    return response.send(`<div class="alert alert-danger" role='alert'><strong>Oh snap!
-        </strong>There was an error with Recaptcha please try again</div>`)
-}
-
-if(request.recaptcha.error) {
-    return response.send(`<div class='alert alert-danger' role='alert'>`)
-    }
-
-const mg = mailgun({apiKey: process.env.MAILGUN_API_KEY, domain: process.env.MAILGUN_DOMAIN})
-
- const {email, subject, name, message} = request.body
-
-
 const handleSendingEmail = (request, response) => {
     response.append("Content-Type","text/html")
     const errors = validationResult(request)
 }
+
+if(errors.isEmpty()===false) {
+    const currentError = errors.array()[0]
+
+    return response.send(`<div class="alert alert-danger" role='alert'><strong>Oh snap!
+        </strong>${currentError.msg}</div>`)
+}
+
+if(request.recaptcha.error) {
+    return response.send(`<div class='alert alert-danger' role='alert'><strong>Ph Snap!</strong>There
+was an error with Recaptcha please try again`)
+}
+
+const mg = mailgun({apiKey: process.env.MAILGUN_API_KEY, domain: process.env.MAILGUN_DOMAIN})
+
+ const {email, subject, name, message} = request.body
     
  const mailgunData = {
         to: process.env.MAIL_RECIPENT,
@@ -61,6 +61,12 @@ const handleSendingEmail = (request, response) => {
         text: message
     }
 
+mg.messages().send(mailgunData, (error) => {
+    if (error) {
+        return response.send(Buffer.from(`<div class='alert alert-danger' role='alert'><strong>Oh snap!</strong> Unable to send email error with email sender</div>`))
+    }
+    return response.send(Buffer.from("<div class='alert alert-success' role='alert'>Email successfully sent.</div>"))
+})
 
 const handleGetRequest = (request, response) => {
     return response.json("The express server is live");
@@ -68,7 +74,7 @@ const handleGetRequest = (request, response) => {
 
 
 // Example express configuration for our /apis/ route.
-indexRoute.route("/test")
+indexRoute.route("/g")
     .get(handleGetRequest)
     .post(recaptcha.middleware.verify, handleSendingEmail)
 
