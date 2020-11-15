@@ -4,8 +4,8 @@ const morgan = require("morgan");
 const {check, validationResult} = require("express-validator")
 const app = express();
 const bodyParser = require("body-parser")
-require("dotenv").config()
 const mailgun = require("mailgun-js")
+require("dotenv").config()
 const Recaptcha = require("express-recaptcha").RecaptchaV2
 
 
