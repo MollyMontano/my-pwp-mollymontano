@@ -15,8 +15,8 @@ const Recaptcha = require("express-recaptcha").RecaptchaV2
 // Morgan: a logger for express so that we have a record for debugging.
 app.use(morgan("dev"));
 app.use(express.json());
-// app.use(bodyParser.urlencoded({extended:false }))
-// app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({extended:false }))
+app.use(bodyParser.json())
 
 
 // Create the page router for express that recognizes and directs our URLs.
