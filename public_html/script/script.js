@@ -1,6 +1,6 @@
-$(function () {
-    $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
-});
+// $(function () {
+//     $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+// });
 
 function openModal() {
     document.getElementById("myModal").style.display = "block";
@@ -32,10 +32,10 @@ function showSlides(n) {
         slides[i].style.display = "none";
     }
     for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+        dots[i].mySlides= dots[i].mySlides.replace(" active", "");
     }
     slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
+    dots[slideIndex-1].mySlides += " active";
     captionText.innerHTML = dots[slideIndex-1].alt;
 }
 
