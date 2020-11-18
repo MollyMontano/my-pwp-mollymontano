@@ -2,22 +2,30 @@ html {
     box-sizing: border-box;
 }
 
-#navbar-custom {
+#nav-link {
     color: white;
 
 }
 
+strong {
+    font-family: 'Sriracha', cursive;
+    color: white;
+    font-size: 30px;
+}
+
 #pecan {
-    font-family:'happy monkey', cursive;
-    font-size: 24px;
-    color: #fefefe;
+    font-family:'Dancing Script', cursive;
+    font-size: 28px;
+    color: gold;
     font-weight: bold;
 
 }
 .modern {
-    font-family: 'permanent marker', cursive;
+    display: flex;
+    align-content: center;
+    font-family: 'Boogaloo', cursive;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 44px;
 }
 
 *,
@@ -30,8 +38,8 @@ html {
     display: flex;
     align-content: center;
     margin: 3px;
-    padding: 3px
-    font-family: 'permanent marker', cursive;
+    padding: 3px;
+    font-family: 'Permanent Marker', cursive;
 
 }
 
