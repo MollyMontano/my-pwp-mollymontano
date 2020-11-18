@@ -3,29 +3,41 @@ html {
 }
 
 .navbar-custom {
-    color: white;
-    text-overline-color: white;
+    font: white;
+
+}
+
+a.navbar-brand {
+    font-family:'permanent marker', 'cursive';
 }
 
 
+body {
+    background: linear-gradient(45deg, red, blue);
+}
 
 *,
 *:before,
 *:after {
     box-sizing: inherit;
 }
+
 .mission {
-    margin: 10px;
-    padding: 10px;
-    display: block;
-    display: inline-flex;
+    margin: 3px;
+    padding: 3px
 
 }
 
 .mission img {
     max-width: 300px;
     opacity: 0.8;
+    float: left;
 }
+.h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 12rem;
+}
+
 
 .about {
     margin-top: 10px;
@@ -178,22 +190,10 @@ img.hover-shadow {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 .contact {
     padding: 3em;
     align-content: center;
-    background-color: gray;
+    background-color: linear-gradient(#e66465, #9198e5);
 }
 
 label {
