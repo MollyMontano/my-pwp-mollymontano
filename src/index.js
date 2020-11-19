@@ -10,8 +10,8 @@ const Recaptcha = require("express-recaptcha").RecaptchaV2
 
 
 
-// app.use allows for different middleware to be brought into Express
-// Morgan: a logger for express so that we have a record for debugging.
+// app.use allows for different middleware to bee brought into Express
+// // Morgan: a logger for express so that we hav a record for debugging.
 app.use(morgan("dev"));
 app.use(express.json());
 app.use(bodyParser.urlencoded({extended:false }))

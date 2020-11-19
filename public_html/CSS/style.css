@@ -14,6 +14,13 @@ html {
     font-family: "Permanent Marker", cursive;
     color: white;
 }
+.alert {
+    background-color: gold;
+    color: black;
+    font-family: 'Boogaloo', cursive;
+    font-size: 20px;
+    text-align: center;
+}
 
 strong {
     font-family: 'Sriracha', cursive;
@@ -174,9 +181,27 @@ img.hover-shadow {
 .contact {
     padding: 3em;
     align-content: center;
-    background-color: lightgray;
+    background-color: gold;
+    opacity: 0.8;
+    font-family: "Permanent Marker", cursive;
 }
 
 label {
     display: block;
+}
+
+figcaption {
+    background-color: gray;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+figure {
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
 }
