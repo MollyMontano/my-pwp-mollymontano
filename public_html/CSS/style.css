@@ -181,7 +181,7 @@ img.hover-shadow {
 .contact {
     padding: 3em;
     align-content: center;
-    background-color: gold;
+    background-color: lightgrey;
     opacity: 0.8;
     font-family: "Permanent Marker", cursive;
 }
@@ -191,7 +191,7 @@ label {
 }
 
 figcaption {
-    background-color: gray;
+    background-color: darkslategray;
     color: #fff;
     font: italic smaller sans-serif;
     padding: 3px;
