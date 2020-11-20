@@ -191,7 +191,7 @@ label {
 }
 
 figcaption {
-    background-color: darkslategray;
+    background-color: #6C757D;
     color: #fff;
     font: italic smaller sans-serif;
     padding: 3px;
@@ -205,3 +205,12 @@ figure {
     max-width: 220px;
     margin: auto;
 }
+
+a {
+    color: white;
+}
+
+b {
+    color: white;
+}
+
