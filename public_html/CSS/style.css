@@ -178,13 +178,6 @@ img.hover-shadow {
 }
 
 
-.contact {
-    padding: 3em;
-    align-content: center;
-    background-color: lightgrey;
-    opacity: 0.8;
-    font-family: "Permanent Marker", cursive;
-}
 
 label {
     display: block;
@@ -206,11 +199,25 @@ figure {
     margin: auto;
 }
 
+.contact {
+    margin: auto;
+    padding: 3em;
+    align-content: center;
+    background-color: lightgrey;
+    opacity: 0.8;
+    font-family: "Permanent Marker", cursive;
+}
+
+H3 {
+    align-content: center;
+}
+
 a {
     color: white;
 }
 
-b {
-    color: white;
+.blue {
+    color: blue;
+    size: 40px;
 }
 
