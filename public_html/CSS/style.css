@@ -14,6 +14,7 @@ html {
     font-family: "Permanent Marker", cursive;
     color: white;
 }
+
 .alert {
     background-color: gold;
     color: black;
@@ -29,12 +30,13 @@ strong {
 }
 
 #pecan {
-    font-family:'Dancing Script', cursive;
+    font-family: 'Dancing Script', cursive;
     font-size: 28px;
     color: gold;
     font-weight: bold;
 
 }
+
 .modern {
     display: block;
     align-content: flex-end;
@@ -95,11 +97,12 @@ h2 {
     display: table;
     clear: both;
 }
+
 .top-buffer {
-    margin-top:15px;
+    margin-top: 15px;
 }
 
-/* Create four equal columns that floats next to eachother */
+/* Create four equal columns that floats next to each other */
 .column {
     float: left;
     width: 25%;
@@ -178,7 +181,6 @@ img.hover-shadow {
 }
 
 
-
 label {
     display: block;
 }
@@ -203,13 +205,13 @@ figure {
     margin: auto;
     padding: 3em;
     align-content: center;
-    background-color: lightgrey;
+    background-color: gray;
     opacity: 0.8;
     font-family: "Permanent Marker", cursive;
 }
 
-H3 {
-    align-content: center;
+.center {
+    text-align: center;
 }
 
 a {
