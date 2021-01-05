@@ -3,7 +3,7 @@ html {
 }
 
 .navbar {
-    border-radius: 6px;
+    /*border-radius: 6px;*/
     background-color: lightgrey;
     color: white;
     font-family: 'Permanent Marker', cursive;
